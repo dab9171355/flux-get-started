@@ -18,6 +18,8 @@ spec:
       repository: bitnami/mongodb
       tag: 4.0.14
     usePassword: false
+    volumePermissions:
+      enabled: true
     persistence:
       enabled: false
     securityContext:
