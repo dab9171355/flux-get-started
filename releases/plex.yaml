@@ -2,10 +2,10 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: plex-media-server
+  name: plex
   namespace: plex
   annotations:
-    fluxcd.io/automated: "false"
+    fluxcd.io/automated: "true"
     fluxcd.io/tag.chart-image: glob:1.19.2.2737-*
 spec:
   releaseName: plex
@@ -17,5 +17,13 @@ spec:
     image:
       repository: plexinc/pms-docker
       tag: 1.19.2.2737-b69929dab
+      env:
+        plexUid: "1000"
+        plexGid: "44"
+        tz: "Australia/Melbourne"
     service:
       type: NodePort
+    volumes:
+      config: "/var/lib/plexmediaserver"
+      transcode: "/tmp"
+      data: "/home/dab/videos"

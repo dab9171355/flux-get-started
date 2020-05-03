@@ -10,14 +10,14 @@ image:
   # Overrides the image tag whose default is the chart version.
   tag: ""
   env:
-    plexUid: "1000"
-    plexGid: "44"
-    tz: "Australia/Melbourne"
+    plexUid: ""
+    plexGid: ""
+    tz: ""
 
 volumes:
-  config: "/var/lib/plexmediaserver" 
-  transcode: "/tmp" 
-  data: "/home/dab/videos"
+  config: ""
+  transcode: ""
+  data: ""
 
 imagePullSecrets: []
 nameOverride: ""
