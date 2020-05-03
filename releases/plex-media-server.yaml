@@ -6,7 +6,7 @@ metadata:
   namespace: plex
   annotations:
     fluxcd.io/automated: "false"
-    fluxcd.io/tag.chart-image: glob:1.19.2.2737:w-*
+    fluxcd.io/tag.chart-image: glob:1.19.2.2737-*
 spec:
   releaseName: plex
   chart:
