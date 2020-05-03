@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: plex
   chart:
-    git: ssh://git@github.com/fluxcd/flux-get-started
+    git: ssh://git@github.com/dab9171355/flux-get-started
     ref: master
     path: charts/plex
   values:
