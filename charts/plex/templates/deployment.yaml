@@ -64,7 +64,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: plex-secrets
-                  key: plexClaim.txt
+                  key: plex-claim
             - name: PLEX_UID
               value: "{{ .Values.image.env.plexUid | nindent 12 }}"
             - name: PLEX_GID
