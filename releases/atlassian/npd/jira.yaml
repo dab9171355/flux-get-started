@@ -20,3 +20,4 @@ spec:
       tag: 8.5.3
     service:
       type: NodePort
+      port: 8081
