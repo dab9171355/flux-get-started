@@ -13,7 +13,7 @@ spec:
     #    git: ssh://APKARQMOF42EGBWJQZPD@git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/env-dolltime-mythbox-k8s
     git: https://github.com/stevehipwell/helm-charts
     ref: master
-    path: /tree/master/charts/jira-software
+    path: /charts/jira-software
   values:
     image:
       repository: atlassian/jira-software
