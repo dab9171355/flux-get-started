@@ -2,5 +2,5 @@ apiVersion: v1
 kind: Namespace
 metadata:
   labels:
-    name: atlassian-dev
-  name: atlassian-dev
+    name: atlassian-npd
+  name: atlassian-npd
