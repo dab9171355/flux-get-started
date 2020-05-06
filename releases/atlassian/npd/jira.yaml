@@ -17,6 +17,6 @@ spec:
   values:
     image:
       repository: atlassian/jira-software
-      tag: 8.5.3
+      tag: 8.8.1
     service:
       type: NodePort
