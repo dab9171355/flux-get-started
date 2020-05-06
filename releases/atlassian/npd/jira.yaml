@@ -1,0 +1,22 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: jira-software
+  namespace: jira-prd
+  annotations:
+    fluxcd.io/automated: "true"
+#    fluxcd.io/tag.chart-image: semver:~1.19
+spec:
+  releaseName: jira
+  chart:
+    #    git: ssh://APKARQMOF42EGBWJQZPD@git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/env-dolltime-mythbox-k8s
+    git: https://github.com/stevehipwell/helm-charts/tree/master/
+    ref: master
+    path: charts/jira-software
+  values:
+    image:
+      repository: atlassian/jira-software
+      tag: 8.8.1
+    service:
+      type: NodePort
