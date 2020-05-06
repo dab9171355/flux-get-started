@@ -3,13 +3,14 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: plex
-  namespace: plex
+  namespace: plex-prd
   annotations:
     fluxcd.io/automated: "true"
     fluxcd.io/tag.chart-image: semver:~1.19
 spec:
   releaseName: plex
   chart:
+#    git: ssh://APKARQMOF42EGBWJQZPD@git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/env-dolltime-mythbox-k8s
     git: ssh://git@github.com/dab9171355/flux-get-started
     ref: master
     path: charts/plex
