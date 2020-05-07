@@ -6,10 +6,10 @@ metadata:
     type: local
     name: jira-data
 spec:
-  storageClassName: manual
+  storageClassName: jira-data
   capacity:
     storage: 10Gi
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/tmp"
+    path: /home/k8s/jira-data

@@ -6,7 +6,7 @@ metadata:
     type: local
     name: plex-config
 spec:
-  storageClassName: manual
+  storageClassName: plex-config
   capacity:
     storage: 10Gi
   accessModes:
@@ -22,7 +22,7 @@ metadata:
     type: local
     name: plex-transcode
 spec:
-  storageClassName: manual
+  storageClassName: plex-transcode
   capacity:
     storage: 10Gi
   accessModes:
@@ -39,7 +39,7 @@ metadata:
     name: plex-data
   selector:
 spec:
-  storageClassName: manual
+  storageClassName: plex-data
   capacity:
     storage: 10Gi
   accessModes:

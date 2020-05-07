@@ -3,42 +3,33 @@ kind: PersistentVolumeClaim
 metadata:
   name: plex-config
 spec:
-  storageClassName: manual
+  storageClassName: plex-config
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 10Gi
-  selector:
-    matchLabels:
-      name: plex-config
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: plex-transcode
 spec:
-  storageClassName: manual
+  storageClassName: plex-transcode
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 10Gi
-  selector:
-    matchLabels:
-      name: plex-transcode
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: plex-data
 spec:
-  storageClassName: manual
+  storageClassName: plex-data
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 10Gi
-  selector:
-    matchLabels:
-      name: plex-data

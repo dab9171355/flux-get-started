@@ -23,5 +23,6 @@ spec:
       port: 8081
     persistence:
       enabled: true
+      storageClass: jira-data
     postgresql:
       enabled: true
