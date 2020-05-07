@@ -22,6 +22,6 @@ spec:
       type: NodePort
       port: 8081
     persistence:
-      enabled: true
-    postgresql:
       enabled: false
+    postgresql:
+      enabled: true
