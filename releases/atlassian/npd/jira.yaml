@@ -24,4 +24,4 @@ spec:
   persistence:
     enabled: true
   postgresql:
-    enabled: false
+    enabled: true
