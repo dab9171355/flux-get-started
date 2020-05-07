@@ -6,7 +6,7 @@ metadata:
   namespace: atlassian-npd
   annotations:
     fluxcd.io/automated: "true"
-#    fluxcd.io/tag.chart-image: semver:~1.19
+    fluxcd.io/tag.chart-image: glob:~2.0
 spec:
   releaseName: jira
   chart:
@@ -17,7 +17,7 @@ spec:
   values:
     image:
       repository: atlassian/jira-software
-      tag: 8.5.3
+      tag: 8.8.1
     service:
       type: NodePort
       port: 8081
