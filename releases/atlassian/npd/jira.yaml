@@ -28,3 +28,6 @@ spec:
       port: 5432
       database: jira
       username: jira
+      password:
+        secret: jira-secrets
+        key: jira-postgres
