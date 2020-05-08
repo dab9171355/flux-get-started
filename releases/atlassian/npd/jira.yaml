@@ -26,8 +26,8 @@ spec:
     psql:
       host: jira-postgresql
       port: 5432
-      database: jira
-      username: jira
+      database: jiradb
+      username: jirauser
       password:
         secret: jira-postgresql
         key: postgresql-password
