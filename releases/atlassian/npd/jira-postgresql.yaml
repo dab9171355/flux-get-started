@@ -14,9 +14,9 @@ spec:
     ref: master
     path: /bitnami/postgresql
   values:
-    image:
-      repository: bitnami/postgresql
-      tag: 11.7.0-debian-10-r98
-    persistence:
-      enabled: true
-      storageClass: jira-postgresql-data
+#    image:
+#      repository: bitnami/postgresql
+#      tag: 11.7.0-debian-10-r98
+#    persistence:
+#      enabled: true
+#      storageClass: jira-postgresql-data
