@@ -24,4 +24,4 @@ spec:
       enabled: true
       storageClass: jira-data
     postgresql:
-      enabled: true
+      enabled: false
