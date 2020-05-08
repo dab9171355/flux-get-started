@@ -13,3 +13,6 @@ spec:
     git: https://github.com/bitnami/charts
     ref: master
     path: /bitnami/postgresql
+  env:
+    POSTGRESQL_DATABASE: "jiradb"
+    POSTGRESQL_USERNAME: "jirauser"
