@@ -23,5 +23,8 @@ spec:
     persistence:
       enabled: true
       storageClass: jira-data
-    postgresql:
-      enabled: false
+    psql:
+      host: jira-postgresql
+      port: 5432
+      database: jira
+      username: jira
