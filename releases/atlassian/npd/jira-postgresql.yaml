@@ -1,0 +1,19 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: jira-postgresql
+  namespace: atlassian-npd
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.chart-image: glob:11.7.*
+spec:
+  releaseName: jira
+  chart:
+    git: https://github.com/bitnami/charts
+    ref: master
+    path: /bitnami/postgresql
+  values:
+    persistence:
+      enabled: true
+      storageClass: jira-postgresql-data
