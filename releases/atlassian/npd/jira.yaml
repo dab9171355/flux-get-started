@@ -5,8 +5,8 @@ metadata:
   name: jira-software
   namespace: atlassian-npd
   annotations:
-    fluxcd.io/tag.chart-image: glob:2.*
     fluxcd.io/automated: "true"
+    fluxcd.io/tag.chart-image: glob:2.0.1
 spec:
   releaseName: jira
   chart:
