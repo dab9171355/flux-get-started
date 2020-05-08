@@ -1,0 +1,1 @@
+{"jobID":"f224a93a-b9c8-ab72-855e-1f9455cab520","spec":{"type":"policy","cause":{"Message":"","User":"David Barrett \u003cdavbarrett@deloitte.com.au\u003e"},"spec":{"atlassian-npd:helmrelease/jira-software":{"add":{},"remove":{"automated":"true"}}}},"result":null}
