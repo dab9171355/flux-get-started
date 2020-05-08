@@ -6,7 +6,7 @@ metadata:
   namespace: plex-prd
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.chart-image: semver:~1.19
+    fluxcd.io/tag.chart-image: glob:1.*
 spec:
   releaseName: plex
   chart:

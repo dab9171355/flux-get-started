@@ -10,7 +10,6 @@ metadata:
 spec:
   releaseName: jira
   chart:
-    #    git: ssh://APKARQMOF42EGBWJQZPD@git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/env-dolltime-mythbox-k8s
     git: https://github.com/stevehipwell/helm-charts
     ref: master
     path: /charts/jira-software
