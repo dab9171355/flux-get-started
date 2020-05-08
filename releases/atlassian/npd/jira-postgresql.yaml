@@ -8,7 +8,7 @@ metadata:
     fluxcd.io/automated: "true"
     fluxcd.io/tag.chart-image: glob:8.9.*
 spec:
-  releaseName: jira
+  releaseName: jira-postgresql
   chart:
     git: https://github.com/bitnami/charts
     ref: master
