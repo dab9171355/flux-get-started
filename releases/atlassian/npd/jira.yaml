@@ -19,7 +19,7 @@ spec:
       tag: 8.8.1
     service:
       type: NodePort
-      port: 8082
+      port: 8080
     persistence:
       enabled: true
       storageClass: jira-data
