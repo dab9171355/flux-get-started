@@ -29,5 +29,5 @@ spec:
       database: jiradb
       username: jirauser
       password:
-        secret: jira-postgresql
+        secret: jira-secrets
         key: postgresql-password
