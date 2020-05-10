@@ -14,12 +14,9 @@ spec:
     ref: master
     path: /charts/jira-software
   values:
-    image:
-      repository: atlassian/jira-software
       tag: 8.8.1
     service:
       type: NodePort
-      port: 8080
     persistence:
       enabled: true
       storageClass: jira-data
