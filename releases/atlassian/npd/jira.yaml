@@ -10,12 +10,12 @@ metadata:
 spec:
   releaseName: jira-software
   chart:
-    git: https://github.com/stevehipwell/helm-charts
+    git: https://github.com/dab9171355/helm-charts
     ref: master
     path: /charts/jira-software
   values:
     image:
-      tag: 8.8.0
+      tag: 8.8.1
     service:
       type: NodePort
     persistence:
