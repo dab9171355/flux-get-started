@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: jira
   chart:
-    git: https://github.com/stevehipwell/helm-charts
+    git: https://github.com/dab9171355/helm-charts
     ref: master
     path: /charts/jira-software
   values:
