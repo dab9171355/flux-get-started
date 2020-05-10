@@ -2,11 +2,11 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: jira-software-custom
+  name: jira-software
   namespace: atlassian-npd
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.chart-image: glob:2.0.*
+#    fluxcd.io/tag.chart-image: glob:2.0.*
 spec:
   releaseName: jira
   chart:
