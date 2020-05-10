@@ -6,10 +6,9 @@ metadata:
   namespace: atlassian-npd
   annotations:
     fluxcd.io/automated: "true"
-#    fluxcd.io/tag.chart-image: glob:2.0.*
-    fluxcd.io/tag.chart-image: glob:*
+    fluxcd.io/tag.chart-image: glob:2.0.*
 spec:
-  releaseName: jira
+  releaseName: jira-custom
   chart:
     git: https://github.com/dab9171355/helm-charts
     ref: master
