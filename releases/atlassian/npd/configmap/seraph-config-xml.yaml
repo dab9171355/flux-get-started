@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: seraph-config.xml
-  namespace: default
+  namespace: atlassian-npd
 data:
   seraph-config.xml: |-
     <!-- DAB WAS HERE -->
