@@ -5,7 +5,6 @@ metadata:
   name: jira-postgresql
   namespace: atlassian-npd
   annotations:
-    fluxcd.io/automated: "true"
     fluxcd.io/tag.chart-image: glob:8.9.*
 spec:
   releaseName: jira-postgresql
