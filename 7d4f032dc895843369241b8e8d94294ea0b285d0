@@ -1,0 +1,1 @@
+{"jobID":"fc00b7b0-72e9-d191-93fc-84b0c5c2b9e2","spec":{"type":"policy","cause":{"Message":"","User":"David Barrett \u003cdavbarrett@deloitte.com.au\u003e"},"spec":{"atlassian-npd:helmrelease/jira-postgresql":{"add":{},"remove":{"automated":"true"}}}},"result":null}
