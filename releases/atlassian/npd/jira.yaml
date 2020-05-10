@@ -8,7 +8,7 @@ metadata:
     fluxcd.io/automated: "true"
     fluxcd.io/tag.chart-image: glob:2.0.*
 spec:
-  releaseName: jira-custom
+  releaseName: jira-software
   chart:
     git: https://github.com/stevehipwell/helm-charts
     ref: master
